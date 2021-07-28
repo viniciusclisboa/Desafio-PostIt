@@ -29,6 +29,9 @@ export default class ContainedButtons extends Component {
       <Button variant="contained" color="secondary" className="botoes">
         Limpar Post-It
       </Button>
+       <Button variant="contained" color="secondary" className="botoes">
+        Limpar Post-It
+      </Button>
     </div>
     </div>
   );
