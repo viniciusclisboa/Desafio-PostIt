@@ -1,0 +1,40 @@
+.container {
+    color: black;
+    opacity: 0.9;
+    padding: 30px;
+    font-family: "Arial";
+    background: white;
+    width: 75%;
+    margin: auto auto;
+    margin-top: 100px; 
+    border-radius: 10px;
+}
+
+.titulo {
+    font-weight: bolder;
+    text-shadow: 2px 2px yellow;
+    margin: 60px 0px;
+    font-size: xx-large;
+}
+
+p {
+    margin: 30px 0px;
+    font-family: Roboto, sans-serif;
+}
+
+#menuSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content:justify;
+    list-style: none;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 95%;
+    height: 50px;
+    background-color: yellow;
+}
+
+.opcao {
+    margin: 20px 20px 0px 20px;
+}

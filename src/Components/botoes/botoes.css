@@ -1,0 +1,18 @@
+.confirmar {
+    display: inline;
+}
+
+#preco{
+    width: 300px;
+    background-color: yellow;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    display: table-cell;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+.botoes {
+    margin: 0px 20px;
+}
