@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
-import ContainedButtons from "../botoes/botoes.js"
+import Botoes from "../botoes/botoes.js"
 import './menu.css';
  
 const useStyles = makeStyles((theme) => ({
@@ -22,8 +22,25 @@ const useStyles = makeStyles((theme) => ({
       tamanho: '?',
       formato: '?',
       quantidade: '?',
-      valor: 0
+      valor: 0,
+      email: '?'
     };
+  }
+  
+  click(){
+    this.setState(state => ({ 
+      cor: '?',
+      tamanho: '?',
+      formato: '?',
+      quantidade: '?',
+      valor: 0
+    }))
+  }
+  
+  emailComprador(email){
+    this.setState(state => ({
+      email: email
+      }))
   }
 
   render(){
@@ -79,16 +96,16 @@ const useStyles = makeStyles((theme) => ({
       quantidade: '500', valor: 10}))}>500</Button>
       </ButtonGroup>
       </div>
-      <p><strong>
-      {
-        `Tamanho: ${this.state.tamanho}\n
-        Cor: ${this.state.cor}\n
-        Formato: ${this.state.formato}\n 
-        Quantidade: ${this.state.quantidade}\n`
-      }
-      </strong>
-      </p>
-      <ContainedButtons valor={this.state.valor} tamanho={this.state.tamanho}/>
+      <div>
+      <ul>
+      <li><strong>{`Tamanho: ${this.state.tamanho}`}</strong></li>
+      <li><strong>{`Cor: ${this.state.cor}`}</strong></li>
+      <li><strong>{`Formato: ${this.state.formato}`}</strong></li> 
+      <li><strong>{`Quantidade: ${this.state.quantidade}`}</strong></li>
+      </ul>
+      </div>
+      
+      <Botoes click={this.click.bind(this)} concluir={this.emailComprador.bind(this)} valor={this.state.valor} tamanho={this.state.tamanho}/>
     </div>
   )
   }

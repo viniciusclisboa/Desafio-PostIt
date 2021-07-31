@@ -12,7 +12,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default class ContainedButtons extends Component {
+
+function email() {
+  let resposta;
+  let email = prompt("Informe seu e-mail", "meuemail@exemplo.com");
+  if (email == null || email == "") {
+    resposta = "Compra cancelada";
+  } else {
+    resposta = "Compra cadastrada!";
+  }
+  alert(resposta)
+}
+
+
+
+export default class Botoes extends Component {
   constructor(props) {
     super(props);}
     
@@ -22,15 +36,10 @@ export default class ContainedButtons extends Component {
      <h2 id="preco">
       Meu Post-It: R$ {(this.props.tamanho == "PEQUENO"?this.props.valor:this.props.valor*2)},00
       </h2>
-    <div>
-      <Button variant="contained" color="primary" className="botoes">
+    <div className="concluir">
+      <Button variant="contained" color="primary" className="botoes" id="limpar" onClick={this.props.click}>Limpar Post-it</Button>
+      <Button variant="contained" color="primary" className="botoes" onClick={email}>
         Adicionar ao carrinho
-      </Button>
-      <Button variant="contained" color="secondary" className="botoes">
-        Limpar Post-It
-      </Button>
-       <Button variant="contained" color="secondary" className="botoes">
-        Limpar Post-It
       </Button>
     </div>
     </div>

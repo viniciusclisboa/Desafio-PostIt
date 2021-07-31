@@ -2,6 +2,10 @@
     display: inline;
 }
 
+.concluir {
+    margin-top: 20px;
+}
+
 #preco{
     width: 300px;
     background-color: yellow;
@@ -10,9 +14,14 @@
     vertical-align: middle;
     display: table-cell;
     border-radius: 10px;
-    margin: 20px 0px;
 }
 
 .botoes {
     margin: 0px 20px;
+}
+
+#limpar {
+    background-color: red;
+    margin-right: 10px;
+    color: white;
 }
