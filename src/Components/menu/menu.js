@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
       </ul>
       </div>
       
-      <Botoes click={this.click.bind(this)} concluir={this.emailComprador.bind(this)} valor={this.state.valor} tamanho={this.state.tamanho}/>
+      <Botoes click={this.click.bind(this)} concluir={this.emailComprador.bind(this)} valor={this.state.valor} tamanho={this.state.tamanho} cor={this.state.cor} formato={this.state.formato} quantidade={this.state.quantidade}/>
     </div>
   )
   }

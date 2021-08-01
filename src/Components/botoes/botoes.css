@@ -17,11 +17,10 @@
 }
 
 .botoes {
-    margin: 0px 20px;
+    margin: 0px 10px !important
 }
 
 #limpar {
     background-color: red;
-    margin-right: 10px;
     color: white;
 }
